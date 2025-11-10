@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ejercicios Bootstrap - Clase</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos generales */
+        body {
+            padding-top: 20px;
+            background-color: #f8f9fa;
+            font-family: "Poppins", sans-serif;
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        /* Navegación por pestañas */
+        .nav-tabs .nav-link.active {
+            font-weight: bold;
+            background-color: #fff;
+            border-bottom-color: #fff;
+        }
+        
+        .tab-content {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-top: none;
+            padding: 20px;
+            border-radius: 0 0 5px 5px;
+            min-height: 500px;
+        }
+        
+        .ejercicio-header {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        /* Estilos para las tarjetas del Ejercicio 4 */
+        .card-body {
+            padding: 0.5rem;
+        }
+        
+        .h5, h5 {
+            font-size: 2.25rem;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 700;
+            color: #000000;
+        }
+        
+        .card {
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 0.25rem;
+        }
+        
+        .cardSet1 {
+            background-color: #669999;
+            color: #ffffff;
+        }
+        
+        .cardSet2 {
+            background-color: #cc6666;
+            color: #ffffff;
+        }
+        
+        .cardSet3 {
+            background-color: #cc9966;
+            color: #ffffff;
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-4">Ejercicios Bootstrap para Clase</h1>
+                
+                <ul class="nav nav-tabs" id="ejerciciosTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="ejercicio1-tab" data-toggle="tab" href="#ejercicio1" role="tab" aria-controls="ejercicio1" aria-selected="true">Ejercicio 1</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ejercicio2-tab" data-toggle="tab" href="#ejercicio2" role="tab" aria-controls="ejercicio2" aria-selected="false">Ejercicio 2</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ejercicio3-tab" data-toggle="tab" href="#ejercicio3" role="tab" aria-controls="ejercicio3" aria-selected="false">Ejercicio 3</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ejercicio4-tab" data-toggle="tab" href="#ejercicio4" role="tab" aria-controls="ejercicio4" aria-selected="false">Ejercicio 4</a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="ejerciciosTabContent">
+                    <!-- EJERCICIO 1 -->
+                    <div class="tab-pane fade show active" id="ejercicio1" role="tabpanel" aria-labelledby="ejercicio1-tab">
+                        <div class="ejercicio-header">
+                            <h2>Ejercicio 1: Layout con Encabezado</h2>
+                            <p class="lead">Demostración de un encabezado destacado con Bootstrap.</p>
+                        </div>
+                        
+                        <div class="container-fluid bg-primary py-5">
+                            <div class="container text-white">
+                                <h1 class="display-3"><b>Layout</b></h1>
+                                <p class="lead">Options for structuring your pages with Bootstrap, including global styles, required scaffolding, grid system, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- EJERCICIO 2 -->
+                    <div class="tab-pane fade" id="ejercicio2" role="tabpanel" aria-labelledby="ejercicio2-tab">
+                        <div class="ejercicio-header">
+                            <h2>Ejercicio 2: Sistema de Grid</h2>
+                            <p class="lead">Demostración del sistema de grid de Bootstrap con diferentes distribuciones.</p>
+                        </div>
+                        
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quod, quia repellat tempora maxime repellendus tenetur voluptas consequuntur odit deleniti!</div>
+                                <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ullam enim quo rerum aut rem natus vel eum magnam labore!</div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo alias perspiciatis voluptate maxime temporibus quo officia cum magni atque beatae.</div>
+                                <div class="col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo alias perspiciatis voluptate maxime temporibus quo officia cum magni atque beatae.</div>
+                                <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo alias perspiciatis voluptate maxime temporibus quo officia cum magni atque beatae.</div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="row">
+                                        <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                        <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                                    </div>
+                                </div>
+                                <div class="col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, harumi</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- EJERCICIO 3 -->
+                    <div class="tab-pane fade" id="ejercicio3" role="tabpanel" aria-labelledby="ejercicio3-tab">
+                        <div class="ejercicio-header">
+                            <h2>Ejercicio 3: Grid Responsivo</h2>
+                            <p class="lead">Demostración del sistema de grid responsivo de Bootstrap.</p>
+                        </div>
+                        
+                        <div class="container">
+                            <div class="text-center py-5">
+                                <h1>Lorem ipsum dolor sit amet.</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, modi.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem earum praesentium nobis expedita distinctio quia explicabo deserunt minus tempora ratione?</p>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem earum praesentium nobis expedita distinctio quia explicabo deserunt minus tempora ratione?</p>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem earum praesentium nobis expedita distinctio quia explicabo deserunt minus tempora ratione?</p>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem earum praesentium nobis expedita distinctio quia explicabo deserunt minus tempora ratione?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- EJERCICIO 4 -->
+                    <div class="tab-pane fade" id="ejercicio4" role="tabpanel" aria-labelledby="ejercicio4-tab">
+                        <div class="ejercicio-header">
+                            <h2>Ejercicio 4: Tarjetas PMBOK</h2>
+                            <p class="lead">Demostración de tarjetas informativas sobre PMBOK.</p>
+                        </div>
+                        
+                        <div class="card-deck">
+                            <div class="card cardSet1">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="pmbok7.png" alt="PMBOK 7">
+                                    <h5 class="card-title mt-3">PMBOK7</h5>
+                                    <p class="card-text">Refleja la gama completa de enfoques de desarrollo (predictivo, tradicional, adaptativo, ágil, híbrido, etc.). Expande la lista de herramientas y técnicas en una nueva sección, "Modelos, Métodos, y Artefactos". Se enfoca en los resultados de los proyectos, además de los entregables.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card cardSet2">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="src/principio.jpg" alt="Enfoque de principios">
+                                    <h5 class="card-title mt-3">Enfoque de principios</h5>
+                                    <p class="card-text">Conjunto de declaraciones que guia las acciones y los comportamientos de los profesionales de la dirección de proyectos con independencia del enfoque de desarrollo. Los dominios se refieren a las estrategias que hay que seguir para realizar el proyecto</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card cardSet3">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="src/valor.jpg" alt="Entrega de valor">
+                                    <h5 class="card-title mt-3">Entrega de valor</h5>
+                                    <p class="card-text">Las organizaciones esperan que los proyectos produzcan resultados más allá de las salidas o entregables. Los directores de proyecto entregan proyectos que crean valor para la organización y sus grupos de interés.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
